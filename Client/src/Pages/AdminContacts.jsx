@@ -13,7 +13,7 @@ export const AdminContacts = ()=>{
 
   const getContacts = async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/admin/contacts",{
+      const response = await fetch("https://server-08sc.onrender.com/api/admin/contacts",{
         method: "GET",
         headers: {
             Authorization: authorizationToken
@@ -30,7 +30,7 @@ export const AdminContacts = ()=>{
 
   const deleteContactByID = async (id) => {
     try {
-      const response = await fetch(`http://localhost:3000/api/admin/contacts/delete/${id}`,{
+      const response = await fetch(`https://server-08sc.onrender.com/api/admin/contacts/delete/${id}`,{
         method: "DELETE",
         headers:{
           Authorization: authorizationToken
