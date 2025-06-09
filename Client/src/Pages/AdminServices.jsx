@@ -11,7 +11,7 @@ export const AdminServices = ()=>{
 
   const getServices = async (params) => {
     try {
-      const response = await fetch("http://localhost:3000/api/admin/services",{
+      const response = await fetch("https://server-08sc.onrender.com/api/admin/services",{
         method: "GET",
         headers: {
             Authorization: authorizationToken
@@ -28,7 +28,7 @@ export const AdminServices = ()=>{
 
   const deleteService = async (id) => {
     try {
-      const response = await fetch(`http://localhost:3000/api/admin/services/delete/${id}`,{
+      const response = await fetch(`https://server-08sc.onrender.com/api/admin/services/delete/${id}`,{
         method: "DELETE",
         headers:{
           Authorization: authorizationToken
